@@ -157,7 +157,7 @@ int main() {
             if (points <= score[9]) {
                 if ((mouse_b & 1) && mouse_x > 25 && mouse_x < 175 &&
                     mouse_y > 575 - menuButton->h && mouse_y < 575) { //Begins a new game
-                    onScreen = changeScreen(2);
+                    onScreen = changeScreen(1);
                 }
                 else if ((mouse_b & 1) && mouse_x > 635 && mouse_x < 775 &&
                          mouse_y > 575 - menuButton->h && mouse_y < 575) { //Returns to main menu
@@ -191,7 +191,7 @@ int main() {
         else if (onScreen == 53) { //Highscore display screen
             if ((mouse_b & 1) && mouse_x > 25 && mouse_x < 175 &&
                 mouse_y > 575 - menuButton->h && mouse_y < 575) { //Begins a new game
-                onScreen = changeScreen(2);
+                onScreen = changeScreen(1);
             }
             else if ((mouse_b & 1) && mouse_x > 635 && mouse_x < 775 &&
                      mouse_y > 575 - menuButton->h && mouse_y < 575) { //Returns to main menu
